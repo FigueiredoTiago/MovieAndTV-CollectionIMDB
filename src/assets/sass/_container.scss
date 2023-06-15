@@ -1,0 +1,109 @@
+//mixin container
+
+@mixin container {
+  max-width: $l-device;
+  margin: 0 auto;
+  position: relative;
+  @include device("m") {
+    max-width: $m-device;
+  }
+  @include device("s") {
+    max-width: $s-device;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  @include clearfix;
+}
+
+//
+.container {
+  @include container;
+}
+
+
+
+/*.container div {
+    margin-bottom: 2rem;
+    background-color: beige;
+}
+
+h1 {
+  max-width: 100%;
+  word-wrap: break-word;
+} */
+
+
+
+.elemento {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.elemento h1 {
+  font-size: 18px;
+  margin-top: 120px;
+  &::after {
+    content: "|";
+    margin-left: 30px;
+  
+  }
+  
+}
+
+.elemento p {
+  margin-top: 50px;
+  max-width: 460px;
+}
+
+.elemento button {
+  margin-top: 50px;
+}
+
+
+.imagem {
+  margin-top: 80px;
+  border-radius: 10rem 10rem 10rem 24rem;
+  border: 1.2rem solid #8176af1c;
+  @include device("s") {
+    margin-top: 0px;
+    width: 90vw;
+  }
+}
+
+.card {
+  margin-top: 100px;
+  
+}
+
+.card-item {
+  text-align: center;
+  background-image: linear-gradient(to top, #433D60, #211E2E);
+  min-height: 510px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  border-radius: 40px;
+  padding: 0 20px;
+  img {
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 10px solid #0e0e0e9a;
+  }
+
+  h2 {
+    
+    font-size: 24px;
+    font-weight:bold;
+    width: 160px;
+    border-bottom: 1px solid #fff;
+  }
+
+  p {
+    text-align: justify;
+    max-width: 250px;
+    margin-top: 20px;
+  }
+}
