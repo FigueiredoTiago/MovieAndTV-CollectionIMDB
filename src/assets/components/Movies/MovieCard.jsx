@@ -92,7 +92,7 @@ const MovieCard = ({ movie, showLink = true }) => {
 
       {showLink && movie.media_type == "person" && (
         <div className="more">
-          <Link to=" ">Ver Mais...</Link>
+          <Link to={`/person/${movie.id}`}>Ver Mais...</Link>
         </div>
       )}
     </div>
