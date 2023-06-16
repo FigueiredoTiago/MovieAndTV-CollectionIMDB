@@ -62,11 +62,12 @@ const Person = () => {
           </div>
 
           <div className="grid-6 poster">
+
             {data && data.poster_path === null && (
               <img src={notFound} alt={data.title} width="300px" />
             )}
 
-            {data && data.poster_path !== null && (
+            {data && data.profile_path !== null && (
               <img
                 src={`https://image.tmdb.org/t/p/w500/${
                   data && data.profile_path
@@ -74,6 +75,7 @@ const Person = () => {
                 alt="CAPA"
               />
             )}
+
           </div>
         </div>
       </div>
