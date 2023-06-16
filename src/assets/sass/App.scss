@@ -44,3 +44,20 @@ body {
   border-radius: 50%;
   animation: spin 1s linear infinite;
 }
+
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #182676;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3854F2;
+  border-radius: 1rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3D6AF2;
+}
