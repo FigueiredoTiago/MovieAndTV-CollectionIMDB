@@ -11,4 +11,8 @@
   span {
     color: #f5c518;
   }
+
+  @include device('s') {
+    font-size: 3.4rem;
+  }
 }
