@@ -16,7 +16,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   font-family: "Bebas Neue", sans-serif;
-  //height: calc(100vh - 8rem);
+  min-height: calc(100vh - 8rem);
 }
 
 @keyframes spin {
