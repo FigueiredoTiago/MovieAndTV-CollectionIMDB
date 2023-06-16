@@ -16,5 +16,32 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   font-family: "Bebas Neue", sans-serif;
-  height: calc(100vh - 8rem);
+  //height: calc(100vh - 8rem);
 }
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.load-card {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading {
+  display: inline-block;
+  width: 7rem;
+  height: 7rem;
+  border: .7rem solid #f3f3f3;
+  border-top: .4rem solid #3498db;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+

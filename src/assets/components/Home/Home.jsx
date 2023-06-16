@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
 import useGet from "../../Hooks/useGet";
+import Loading from "../Loading/Loading";
 import MovieCard from "../Movies/MovieCard";
 
 const Home = () => {
@@ -11,12 +12,12 @@ const Home = () => {
   );
   console.log(data);
 
+  if (isLoading) return <Loading />
   return (
     <div id="home" className="container">
 
       <h1 className="home-title">TOP <span>FILMES</span> E <span>SERIES</span> DA SEMANA </h1>
-
-      {isLoading && <p>Loading...</p>}
+      
       {error && <p>{error}</p>}
 
       {data && data.map((movie) => <MovieCard key={movie.id} movie={movie} />)}

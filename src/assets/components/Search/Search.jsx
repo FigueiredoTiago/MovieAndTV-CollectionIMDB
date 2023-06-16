@@ -2,6 +2,7 @@
 import { useSearchParams } from "react-router-dom";
 import MovieCard from "../Movies/MovieCard";
 import useGet from "../../Hooks/useGet";
+import Loading from "../Loading/Loading";
 
 const searchURL = import.meta.env.VITE_SEARCH_ALL;
 const apiKey = import.meta.env.VITE_API_KEY;
@@ -16,6 +17,7 @@ const Search = () => {
 
   console.log(data);
 
+  if (isLoading) return <Loading />;
   return (
     <div className="container">
 

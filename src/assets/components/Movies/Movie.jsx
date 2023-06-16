@@ -2,7 +2,8 @@
 import { useParams } from "react-router-dom";  
 import useGet from "../../Hooks/useGetSingle";
 import imdb from "../../sass/img/imdb.svg";
-import notFound from "../../sass/img/imgnotfound.jpg"; 
+import notFound from "../../sass/img/imgnotfound.jpg";
+import Loading from "../Loading/Loading";
 
 const searchURL = import.meta.env.VITE_API;
 const apikey = import.meta.env.VITE_API_KEY;
@@ -19,7 +20,8 @@ const Movie = () => {
   }`;
 
   console.log(data);
-
+  
+  if (isLoading) return <Loading />;
   return (
     <div
       className="bg-movie"
