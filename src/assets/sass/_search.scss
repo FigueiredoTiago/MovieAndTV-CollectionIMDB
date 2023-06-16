@@ -1,11 +1,14 @@
 .search-title {
-    font-size: 4.4rem;
-    letter-spacing: .3rem;
-    color: #0D0D0D;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+  font-size: 4.4rem;
+  letter-spacing: 0.3rem;
+  text-decoration: overline underline;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 
-    span {
-        color: #f5c518;
-    }
+  span {
+    color: #f5c518;
+  }
 }

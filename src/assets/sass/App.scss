@@ -11,7 +11,7 @@
 body {
   margin-top: 8rem;
   background-color: #3854f2;
-  background-image: url("../../assets/sass/img/low-poly-grid-haikei.svg");
+  background-image: url("../../assets/sass/img/bghkey.svg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -39,9 +39,8 @@ body {
   display: inline-block;
   width: 7rem;
   height: 7rem;
-  border: .7rem solid #f3f3f3;
-  border-top: .4rem solid #3498db;
+  border: 0.7rem solid #f3f3f3;
+  border-top: 0.4rem solid #3498db;
   border-radius: 50%;
   animation: spin 1s linear infinite;
 }
-
