@@ -1,7 +1,8 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import { Link } from "react-router-dom";
-import imdb from "../../sass/img/imdb.svg";  
+import imdb from "../../sass/img/imdb.svg"; 
+import notFound from '../../sass/img/imgnotfound.jpg'; 
 
 const MovieCard = ({ movie, showLink = true }) => {
   const imgURL = import.meta.env.VITE_IMG;
@@ -11,6 +12,22 @@ const MovieCard = ({ movie, showLink = true }) => {
   }
   return (
     <div className="grid-3 movie-card">
+      {movie.poster_path === null && (
+        <img
+          className="poster-img-not-found"
+          src={notFound}
+          alt={movie.title}
+        />
+      )}
+
+      {movie.profile_path === null && (
+        <img
+          className="poster-img-not-found"
+          src={notFound}
+          alt={movie.title}
+        />
+      )}
+
       {movie.media_type == "movie" && movie.poster_path !== null && (
         <img
           className="poster-card-img"

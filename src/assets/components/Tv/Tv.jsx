@@ -2,6 +2,7 @@
 import { useParams } from "react-router-dom";
 import imdb from "../../sass/img/imdb.svg";
 import useGet from "../../Hooks/useGetSingle";
+import notFound from "../../sass/img/imgnotfound.jpg"; 
 
 const searchURL = import.meta.env.VITE_API_SERIES;
 const apikey = import.meta.env.VITE_API_KEY;
@@ -57,12 +58,18 @@ const Tv = () => {
           </div>
 
           <div className="grid-6 poster">
-            <img
-              src={`https://image.tmdb.org/t/p/w500/${
-                data && data.poster_path
-              }`}
-              alt="CAPA"
-            />
+            {data && data.poster_path === null && (
+              <img src={notFound} alt={data.title} width="300px" />
+            )}
+
+            {data && data.poster_path !== null && (
+              <img
+                src={`https://image.tmdb.org/t/p/w500/${
+                  data && data.poster_path
+                }`}
+                alt="CAPA"
+              />
+            )}
 
             <span>{data && data.tagline}</span>
           </div>

@@ -1,8 +1,8 @@
 /* eslint-disable no-unused-vars */
 import { useParams } from "react-router-dom";  
-
 import useGet from "../../Hooks/useGetSingle";
 import imdb from "../../sass/img/imdb.svg";
+import notFound from "../../sass/img/imgnotfound.jpg"; 
 
 const searchURL = import.meta.env.VITE_API;
 const apikey = import.meta.env.VITE_API_KEY;
@@ -49,12 +49,18 @@ const Movie = () => {
           </div>
 
           <div className="grid-6 poster">
-            <img
-              src={`https://image.tmdb.org/t/p/w500/${
-                data && data.poster_path
-              }`}
-              alt="CAPA"
-            />
+            {data && data.poster_path === null && (
+              <img width="300px" src={notFound} alt={data.title} />
+            )}
+
+            {data && data.poster_path !== null && (
+              <img
+                src={`https://image.tmdb.org/t/p/w500/${
+                  data && data.poster_path
+                }`}
+                alt="CAPA"
+              />
+            )}
 
             <span>{data && data.tagline}</span>
           </div>
