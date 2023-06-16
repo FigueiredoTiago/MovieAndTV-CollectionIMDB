@@ -51,7 +51,7 @@ const Tv = () => {
 
             <span>TEMPORADAS: {data && data.number_of_seasons}</span>
             <span>EPISODIOS: {data && data.number_of_episodes}</span>
-            <span>
+            <span className="web-link">
               DISPONIVEL EM:{" "}
               <a target="_blank" href={data && data.homepage} rel="noreferrer">
                 {data && data.name}.COM
