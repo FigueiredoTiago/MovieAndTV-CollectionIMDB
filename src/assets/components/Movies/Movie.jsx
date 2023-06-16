@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import { useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";  
 
 import useGet from "../../Hooks/useGetSingle";
 import imdb from "../../sass/img/imdb.svg";
@@ -56,7 +56,7 @@ const Movie = () => {
               alt="CAPA"
             />
 
-            <span>{data && data.tagline}!</span>
+            <span>{data && data.tagline}</span>
           </div>
         </div>
       </div>

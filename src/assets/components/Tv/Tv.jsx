@@ -64,7 +64,7 @@ const Tv = () => {
               alt="CAPA"
             />
 
-            <span>{data && data.tagline}!</span>
+            <span>{data && data.tagline}</span>
           </div>
         </div>
       </div>
