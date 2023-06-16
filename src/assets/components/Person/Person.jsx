@@ -63,7 +63,7 @@ const Person = () => {
 
           <div className="grid-6 poster">
 
-            {data && data.poster_path === null && (
+            {data && data.profile_path === null && (
               <img src={notFound} alt={data.title} width="300px" />
             )}
 
