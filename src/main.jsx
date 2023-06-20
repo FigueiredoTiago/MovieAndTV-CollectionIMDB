@@ -8,6 +8,8 @@ import App from "./App.jsx";
 import Tv from "./assets/components/Tv/Tv";
 import Notfound from "./assets/components/Notfound/Notfound";
 import Person from "./assets/components/Person/Person";
+import Serie from "./assets/components/page/serie";
+
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -15,6 +17,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       <Routes>
         <Route element={<App />}>
           <Route path="/" element={<Home />} />
+          <Route path="serie" element={<Serie />} />
           <Route path="movie/:id" element={<Movie />} />
           <Route path="tv/:id" element={<Tv />} />
           <Route path="person/:id" element={<Person />} />

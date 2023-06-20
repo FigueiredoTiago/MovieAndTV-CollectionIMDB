@@ -36,23 +36,21 @@ function Navbar() {
 
   return (
     <header className={navbarSolid ? "solid" : "transparent"}>
-      
       <h2 className="logo">
         <Link to="/">SearchMovies</Link>
       </h2>
 
+      <Link to="/serie">Serie</Link>
+
       <nav id="navbar">
         <form onSubmit={handleSubmit}>
-
-          
-            <input
-              className="search-input"
-              type="text"
-              placeholder="Search..."
-              onChange={(e) => setSearch(e.target.value)}
-              value={search}
-            />
-          
+          <input
+            className="search-input"
+            type="text"
+            placeholder="Search..."
+            onChange={(e) => setSearch(e.target.value)}
+            value={search}
+          />
 
           <button type="submit">
             <img src={searchIcon} alt="search" />
