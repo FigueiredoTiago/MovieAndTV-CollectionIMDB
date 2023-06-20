@@ -7,9 +7,6 @@ import notFound from '../../sass/img/imgnotfound.jpg';
 const MovieCard = ({ movie, showLink = true }) => {
   const imgURL = import.meta.env.VITE_IMG;
 
-  if(movie.length === 0) {
-    return null;
-  }
   return (
     <div className="grid-3 movie-card">
       {movie.poster_path === null && (

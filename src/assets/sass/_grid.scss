@@ -27,10 +27,10 @@ $s-device: 480px;
 // funcao do grid
 
 @function grid($col, $offset: false) {
-  $width: $col / $cols * 100%;
+  $width: calc($col / $cols * 100%);
   $result: calc(#{$width} - #{$gutter});
   @if $offset == offset {
-    $gutter: $gutter / 2;
+    $gutter: calc($gutter / 2);
     $result: calc(#{$width} + #{$gutter});
   }
   @return $result;
@@ -49,8 +49,8 @@ $s-device: 480px;
 @mixin grid-structure {
   float: left;
   min-height: 1px;
-  margin-left: $gutter / 2;
-  margin-right: $gutter / 2;
+  margin-left: calc($gutter / 2);
+  margin-right: calc($gutter / 2);
   @include device("s") {
     width: 100%;
     float: none;
@@ -91,13 +91,12 @@ $s-device: 480px;
   }
 }
 
-
 //row
 
 @mixin row {
   position: relative;
-  margin-left: -$gutter / 2;
-  margin-right: -$gutter / 2;
+  margin-left: calc(-1 * $gutter / 2);
+  margin-right: calc(-1 * $gutter / 2);
   @include device("s") {
     margin-left: 0;
     margin-right: 0;

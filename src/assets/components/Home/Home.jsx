@@ -10,14 +10,16 @@ const Home = () => {
   const { data, error, isLoading } = useGet(
     `${apiTopMovies}?${apikey}&language=pt-BR`
   );
+
   console.log(data);
 
-  if (isLoading) return <Loading />
+  if (isLoading) return <Loading />;
   return (
     <div id="home" className="container">
+      <h1 className="home-title">
+        TOP <span>FILMES</span> E <span>SERIES</span> DA SEMANA{" "}
+      </h1>
 
-      <h1 className="home-title">TOP <span>FILMES</span> E <span>SERIES</span> DA SEMANA </h1>
-      
       {error && <p>{error}</p>}
 
       {data && data.map((movie) => <MovieCard key={movie.id} movie={movie} />)}
