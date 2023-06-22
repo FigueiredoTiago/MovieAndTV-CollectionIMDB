@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import searchIcon from "../../sass/img/search.svg";
 
-
 function Navbar() {
   const [search, setSearch] = useState("");
   const navigate = useNavigate();
@@ -31,7 +30,6 @@ function Navbar() {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-
   }, []);
 
   return (
@@ -40,7 +38,8 @@ function Navbar() {
         <Link to="/">SearchMovies</Link>
       </h2>
 
-      <Link to="/serie">Serie</Link>
+      <Link to="/serie">Series</Link>
+      <Link to="/movie">Filmes</Link>
 
       <nav id="navbar">
         <form onSubmit={handleSubmit}>

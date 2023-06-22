@@ -9,6 +9,7 @@ import Tv from "./assets/components/Tv/Tv";
 import Notfound from "./assets/components/Notfound/Notfound";
 import Person from "./assets/components/Person/Person";
 import Serie from "./assets/components/page/serie";
+import MovieP from "./assets/components/page/MovieP";
 
 
 ReactDOM.createRoot(document.getElementById("root")).render(
@@ -18,6 +19,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route element={<App />}>
           <Route path="/" element={<Home />} />
           <Route path="serie" element={<Serie />} />
+          <Route path="movie" element={<MovieP />} />
           <Route path="movie/:id" element={<Movie />} />
           <Route path="tv/:id" element={<Tv />} />
           <Route path="person/:id" element={<Person />} />

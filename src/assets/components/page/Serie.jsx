@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import UseGet from "../../Hooks/useGet";
 import Loading from "../Loading/Loading";
-import PageCard from "./PageCard";
+import MovieCard from "../Movies/MovieCard";
 
 const Serie = () => {
   const apiTopMovies = import.meta.env.VITE_TOP_SERIES;
@@ -22,7 +22,7 @@ const Serie = () => {
 
       {error && <p>{error}</p>}
 
-      {data && data.map((item) => <PageCard key={item.id} data={item} />)}
+      {data && data.map((item) => <MovieCard key={item.id} movie={item} />)}
     </div>
   );
 };
