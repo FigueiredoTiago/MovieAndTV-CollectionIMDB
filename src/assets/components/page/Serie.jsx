@@ -17,7 +17,7 @@ const Serie = () => {
   return (
     <div id="home" className="container">
       <h1 className="home-title">
-        <span>SERIES</span> MAIS BEM AVALIADAS{" "}
+        <span>SERIES</span> EM ALTA HOJE{" "}
       </h1>
 
       {error && <p>{error}</p>}

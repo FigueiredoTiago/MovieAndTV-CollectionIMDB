@@ -40,6 +40,7 @@ function Navbar() {
 
       <Link to="/serie">Series</Link>
       <Link to="/movie">Filmes</Link>
+      <Link to="/actor">Atores</Link>
 
       <nav id="navbar">
         <form onSubmit={handleSubmit}>

@@ -1,10 +1,10 @@
 /* eslint-disable no-unused-vars */
 import UseGet from "../../Hooks/useGet";
 import Loading from "../Loading/Loading";
-import MovieCard from '../Movies/MovieCard';
+import MovieCard from "../Movies/MovieCard";
 
-const MovieP = () => {
-  const apiTopMovies = import.meta.env.VITE_TOP_MOVIES;
+const Actor = () => {
+  const apiTopMovies = import.meta.env.VITE_TOP_PERSON;
   const apikey = import.meta.env.VITE_API_KEY;
 
   const { data, error, isLoading } = UseGet(
@@ -17,7 +17,7 @@ const MovieP = () => {
   return (
     <div id="home" className="container">
       <h1 className="home-title">
-        <span>FILMES</span> EM ALTA HOJE{" "}
+        <span>ATORES</span> MAIS ACESSADOS DA SEMANA{" "}
       </h1>
 
       {error && <p>{error}</p>}
@@ -27,4 +27,4 @@ const MovieP = () => {
   );
 };
 
-export default MovieP;
+export default Actor;

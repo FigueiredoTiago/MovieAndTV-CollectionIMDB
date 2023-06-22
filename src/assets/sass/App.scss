@@ -10,13 +10,13 @@
 
 body {
   margin-top: 8rem;
-  background-color: #3854f2;
+  background-color: #00101c;
   background-image: url("../../assets/sass/img/bgdark.svg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   font-family: "Bebas Neue", sans-serif;
-  min-height: calc(100vh - 8rem);
+  min-height: calc(100vh - 8rem) !important;
 }
 
 @keyframes spin {
@@ -50,7 +50,7 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #00101C;
+  background: #00101c;
 }
 
 ::-webkit-scrollbar-thumb {
