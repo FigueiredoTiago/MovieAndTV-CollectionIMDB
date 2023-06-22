@@ -62,10 +62,20 @@
   text-align: center;
   font-size: 1.7rem;
   transition: background-position 0.3s ease;
+  &:hover {
+    color: #fff !important;
+  }
+
+  a {
+    color: #283040 !important;
+
+    &:hover {
+      color: #fff !important;
+    }
+  }
 }
 
 .btn:hover {
   background-position: left;
   color: #fff !important;
 }
-

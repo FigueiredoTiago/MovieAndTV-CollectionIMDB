@@ -1,4 +1,4 @@
-header { 
+header {
   height: 8rem;
   width: 100vw;
   display: flex;
@@ -10,9 +10,18 @@ header {
   z-index: 100000;
   transition: background-color 0.3s ease;
 
-  @include device('s') {
+  .menu-mobile {
+    display: none;
+    width: 2rem;
+  }
+
+  @include device("s") {
     padding: 0;
     justify-content: space-around;
+
+    .menu-mobile {
+      display: block;
+    }
   }
 
   .logo a {
@@ -22,6 +31,10 @@ header {
     &:hover {
       color: #fdfdfd;
     }
+
+    @include device("s") {
+      font-size: 2.2rem;
+    }
   }
 
   nav {
@@ -29,11 +42,35 @@ header {
     align-items: center;
     justify-content: center;
     gap: 4rem;
+    transition: 0.5s;
+
+    @include device("s") {
+      gap: 1rem;
+      position: absolute;
+      display: none;
+      opacity: 0;
+      top: 0;
+      right: 0;
+    }
 
     a {
       font-weight: bolder;
-      color: #3854f2;
       letter-spacing: 0.2rem;
+      
+    }
+
+    &.active {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: 7rem;
+      padding-top: 2rem;
+      background-color: #0d0d0d;
+      position: absolute;
+      margin-top: 8rem;
+      width: 60dvw;
+      height: 100lvh;
+      opacity: 1;
     }
   }
 
@@ -42,8 +79,6 @@ header {
     align-items: center;
     justify-content: center;
   }
-
-  
 
   .search-input {
     width: 100%; /* Largura inicial do campo de pesquisa */
@@ -86,13 +121,22 @@ header {
       }
     }
   }
-} 
+}
 
 .solid {
   background-color: #0d0d0d;
 
   input {
     background-color: #3854f2;
+  }
+
+  a {
+    color: #3854f2;
+    text-shadow: 0 0 10px #000000;
+  }
+
+  #navbar.active {
+    background-color: #0d0d0d;
   }
 }
 
@@ -110,8 +154,10 @@ header {
     text-shadow: 0 0 10px #000000;
   }
 
+  #navbar.active {
+    background-color: #000000;
+  }
 }
-
 
 .active {
   color: #fff !important;

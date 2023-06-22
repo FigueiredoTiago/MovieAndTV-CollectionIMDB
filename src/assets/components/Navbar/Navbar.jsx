@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { useLocation, NavLink, useNavigate, Link } from "react-router-dom";
 import searchIcon from "../../sass/img/search.svg";
+import menu from "../../sass/img/menu-icon.svg";
 
 function Navbar() {
   const [search, setSearch] = useState("");
@@ -34,13 +35,20 @@ function Navbar() {
 
   const location = useLocation();
 
+  //menu 
+  const [classActive, setClassActive] = useState(false);
+
+  function handleMenu() {
+    setClassActive(!classActive);
+  }
+
   return (
     <header className={navbarSolid ? "solid" : "transparent"}>
       <h2 className="logo">
-        <Link to="/">SearchMovies</Link>
+        <Link to="/">IMDB_COLLECTION</Link>
       </h2>
 
-      <nav id="navbar">
+      <nav id="navbar" className={classActive ? 'active' : ''}>
         <form onSubmit={handleSubmit}>
           <input
             className="search-input"
@@ -65,6 +73,8 @@ function Navbar() {
           Atores
         </NavLink>
       </nav>
+
+      <img src={menu} alt="menu mobile" className="menu-mobile" onClick={handleMenu} />
     </header>
   );
 }
