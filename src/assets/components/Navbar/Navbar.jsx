@@ -37,9 +37,7 @@ function Navbar() {
   return (
     <header className={navbarSolid ? "solid" : "transparent"}>
       <h2 className="logo">
-        <NavLink exact to="/">
-          SearchMovies
-        </NavLink>
+        <Link to="/">SearchMovies</Link>
       </h2>
 
       <nav id="navbar">
@@ -57,7 +55,7 @@ function Navbar() {
           </button>
         </form>
 
-        <NavLink to="/serie" activeClassName="active">
+        <NavLink exact to="/serie" activeClassName="active">
           Series
         </NavLink>
         <NavLink to="/movie" activeClassName="active">
