@@ -27,6 +27,16 @@ header {
   .logo a {
     color: #3854f2;
     letter-spacing: 0.2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+    gap: .5rem;
+
+    img {
+      width: 2.5rem;
+    }
 
     &:hover {
       color: #fdfdfd;

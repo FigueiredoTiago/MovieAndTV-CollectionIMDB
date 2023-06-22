@@ -77,7 +77,7 @@ const MovieCard = ({ movie, showLink = true }) => {
 
       {showLink && movie.media_type == "movie" && (
         <Link className="btn" to={`/movie/${movie.id}`}>
-          Ver Mais..
+          Ver Mais...
         </Link>
       )}
 

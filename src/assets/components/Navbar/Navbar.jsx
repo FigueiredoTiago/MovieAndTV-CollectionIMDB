@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { useLocation, NavLink, useNavigate, Link } from "react-router-dom";
 import searchIcon from "../../sass/img/search.svg";
 import menu from "../../sass/img/menu-icon.svg";
+import cam from "../../sass/img/cam.png";
 
 function Navbar() {
   const [search, setSearch] = useState("");
@@ -45,10 +46,10 @@ function Navbar() {
   return (
     <header className={navbarSolid ? "solid" : "transparent"}>
       <h2 className="logo">
-        <Link to="/">IMDB_COLLECTION</Link>
+        <Link to="/">CineScore <img src={cam} alt="logo" />  </Link>
       </h2>
 
-      <nav id="navbar" className={classActive ? 'active' : ''}>
+      <nav id="navbar" className={classActive ? "active" : ""}>
         <form onSubmit={handleSubmit}>
           <input
             className="search-input"
@@ -74,7 +75,12 @@ function Navbar() {
         </NavLink>
       </nav>
 
-      <img src={menu} alt="menu mobile" className="menu-mobile" onClick={handleMenu} />
+      <img
+        src={menu}
+        alt="menu mobile"
+        className="menu-mobile"
+        onClick={handleMenu}
+      />
     </header>
   );
 }
