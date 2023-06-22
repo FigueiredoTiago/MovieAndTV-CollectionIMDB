@@ -52,7 +52,7 @@ const MovieCard = ({ movie, showLink = true }) => {
       {movie.media_type == "movie" && (
         <p className="vote">
           <img src={imdb} alt="IMDB LOGO" />
-          {movie.vote_average}
+          {movie.vote_average.toFixed(1)}
         </p>
       )}
 
