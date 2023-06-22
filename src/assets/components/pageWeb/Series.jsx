@@ -3,7 +3,7 @@ import UseGet from "../../Hooks/useGet";
 import Loading from "../Loading/Loading";
 import MovieCard from "../Movies/MovieCard";
 
-const Serie = () => {
+const Series = () => {
   const apiTopMovies = import.meta.env.VITE_TOP_SERIES;
   const apikey = import.meta.env.VITE_API_KEY;
 
@@ -27,4 +27,4 @@ const Serie = () => {
   );
 };
 
-export default Serie;
+export default Series;

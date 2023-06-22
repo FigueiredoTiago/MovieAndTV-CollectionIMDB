@@ -10,7 +10,7 @@ import Notfound from "./assets/components/Notfound/Notfound";
 import Person from "./assets/components/Person/Person";
 import MovieP from "./assets/components/pageWeb/MovieP";
 import Actor from "./assets/components/pageWeb/Actor";
-import Serie from "./assets/components/pageWeb/serie";
+import Serie from "./assets/components/pageWeb/Series";
 
 
 ReactDOM.createRoot(document.getElementById("root")).render(
