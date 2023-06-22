@@ -11,7 +11,7 @@
 body {
   margin-top: 8rem;
   background-color: #3854f2;
-  background-image: url("../../assets/sass/img/bghkey.svg");
+  background-image: url("../../assets/sass/img/bgdark.svg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -50,14 +50,14 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #182676;
+  background: #00101C;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #3854F2;
+  background: #3d3d3d;
   border-radius: 1rem;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #3D6AF2;
+  background: #585858;
 }
