@@ -8,9 +8,9 @@ import App from "./App.jsx";
 import Tv from "./assets/components/Tv/Tv";
 import Notfound from "./assets/components/Notfound/Notfound";
 import Person from "./assets/components/Person/Person";
-import MovieP from "./assets/components/page/MovieP";
-import Actor from "./assets/components/page/Actor";
-import Serie from "./assets/components/page/serie";
+import MovieP from "./assets/components/pageWeb/MovieP";
+import Actor from "./assets/components/pageWeb/Actor";
+import Serie from "./assets/components/pageWeb/serie";
 
 
 ReactDOM.createRoot(document.getElementById("root")).render(
