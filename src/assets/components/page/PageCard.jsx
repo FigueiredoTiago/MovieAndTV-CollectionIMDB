@@ -26,9 +26,11 @@ const PageCard = ({ data, showLink = true }) => {
 
       {data && <h1 className="title-card">{data.name}</h1>}
 
-      {data && showLink && <Link className="more" to={`/movie/${data.id}`}>
+      {data && showLink && (
+        <Link className="more" to={`/tv/${data.id}`}>
           Ver Mais..
-        </Link>}
+        </Link>
+      )}
     </div>
   );
 };
