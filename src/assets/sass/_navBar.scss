@@ -1,4 +1,4 @@
-header {
+header { 
   height: 8rem;
   width: 100vw;
   display: flex;
@@ -28,7 +28,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
+    gap: 4rem;
 
     a {
       font-weight: bolder;
@@ -58,18 +58,18 @@ header {
     width: 8rem !important;
     height: 3rem;
     border: 2px solid transparent;
-    background-color: #1f2f8c;
-    color: #fff;
+    background-color: #f2b84b;
+    color: #0d0d0d;
     border-radius: 100px;
     padding: 1rem;
 
     &::placeholder {
-      color: #efefef;
+      color: #0d0d0d !important;
     }
 
     &:focus {
       outline: none;
-      border-color: #3854f2;
+      border-color: #fff;
     }
   }
 
@@ -90,6 +90,10 @@ header {
 
 .solid {
   background-color: #0d0d0d;
+
+  input {
+    background-color: #3854f2;
+  }
 }
 
 .transparent {
@@ -105,4 +109,10 @@ header {
     color: #f2b84b;
     text-shadow: 0 0 10px #000000;
   }
+
+}
+
+
+.active {
+  color: #fff !important;
 }

@@ -46,19 +46,26 @@
 
 .btn {
   padding: 10px 20px;
-  background-image: linear-gradient(to right, #283040 0%, #283040 50%, #f2b84b 50%, #f2b84b 100%); 
-  background-size: 200% 100%; 
-  background-position: right; 
+  background-image: linear-gradient(
+    to right,
+    #283040 0%,
+    #283040 50%,
+    #f2b84b 50%,
+    #f2b84b 100%
+  );
+  background-size: 200% 100%;
+  background-position: right;
   background-repeat: no-repeat;
   border: none;
   border-radius: 5rem;
-  color: #283040;
+  color: #283040 !important;
   text-align: center;
   font-size: 1.7rem;
   transition: background-position 0.3s ease;
-  
 }
 
 .btn:hover {
-  background-position: left; 
-  color: #fff; }
+  background-position: left;
+  color: #fff !important;
+}
+

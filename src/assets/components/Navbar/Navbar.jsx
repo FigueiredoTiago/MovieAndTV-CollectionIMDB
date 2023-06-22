@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import { useState, useEffect } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useLocation, NavLink, useNavigate, Link } from "react-router-dom";
 import searchIcon from "../../sass/img/search.svg";
 
 function Navbar() {
@@ -32,15 +32,15 @@ function Navbar() {
     };
   }, []);
 
+  const location = useLocation();
+
   return (
     <header className={navbarSolid ? "solid" : "transparent"}>
       <h2 className="logo">
-        <Link to="/">SearchMovies</Link>
+        <NavLink exact to="/">
+          SearchMovies
+        </NavLink>
       </h2>
-
-      <Link to="/serie">Series</Link>
-      <Link to="/movie">Filmes</Link>
-      <Link to="/actor">Atores</Link>
 
       <nav id="navbar">
         <form onSubmit={handleSubmit}>
@@ -56,6 +56,16 @@ function Navbar() {
             <img src={searchIcon} alt="search" />
           </button>
         </form>
+
+        <NavLink to="/serie" activeClassName="active">
+          Series
+        </NavLink>
+        <NavLink to="/movie" activeClassName="active">
+          Filmes
+        </NavLink>
+        <NavLink to="/actor" activeClassName="active">
+          Atores
+        </NavLink>
       </nav>
     </header>
   );
