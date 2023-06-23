@@ -46,7 +46,7 @@ const Tv = () => {
             <span>Data de Lançamento: {data && data.first_air_date} </span>
 
             <span className="vote">
-              <img src={imdb} width="20px" /> {data && data.vote_average}{" "}
+              <img src={imdb} width="20px" /> {data && data.vote_average.toFixed(1)}{" "}
             </span>
 
             <span>TEMPORADAS: {data && data.number_of_seasons}</span>
