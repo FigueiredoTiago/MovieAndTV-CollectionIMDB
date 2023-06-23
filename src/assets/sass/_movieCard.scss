@@ -9,7 +9,7 @@
   margin-top: 2rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content:space-evenly;
   margin-bottom: 5rem;
 
   @include device("s") {
@@ -28,7 +28,7 @@
   }
 
   .title-card {
-    font-size: 2rem;
+    font-size: 1.9rem;
     font-weight: normal;
   }
 
@@ -60,7 +60,7 @@
   border: none;
   border-radius: 5rem;
   text-align: center;
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   font-weight: bold;
   transition: background-position 0.3s ease;
   text-decoration: none;
@@ -76,6 +76,10 @@
     &:hover {
       color: #fff !important;
     }
+  }
+
+  @include device("s") {
+    margin-top: 1rem;
   }
 }
 

@@ -5,7 +5,7 @@ const Footer = () => {
     <footer>
       <section className="container">
         <p>
-          Este Site Foi Criado e Densenvolvido Por
+          Este Site Foi Criado e Desenvolvido Por
           <a
             href="https://website-portfolio-tf.vercel.app/"
             target="_blank"
