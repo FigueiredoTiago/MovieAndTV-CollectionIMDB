@@ -7,4 +7,6 @@ Link para se cadastrar e Criar sua Chave de Api: https://www.themoviedb.org
 
 obs: Deixar Publico arquivos Sensíveis como chaves de Api Privadas dentre outros arquivos que somente o desenvolvedor deve ter acesso nao e uma boa Pratica nem e Seguro.
 
+O Site esta Disponivel aqui Para Todos Acessar:https://imdbcollection.vercel.app/
+
 <img src='./src/assets/sass/img/cine.png'>
