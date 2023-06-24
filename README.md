@@ -1,7 +1,7 @@
 # MovieAndTV-CollectionIMDB
 
 BEM VINDOS AO IMDB COLLECTION
-Irei deixar o arquivo env para que todos tenham acesso, Porem aconselho que se forem Criar um site que use a Api do The tmdb data base, entre no site Oficial deles e Crie seu Login e senha e gerem sua API KEY e totalmente Free o Link encontra-se logo abaixo.
+Irei deixar o arquivo env para que todos tenham acesso, Porem aconselho que se forem Criar um site que use a Api do The tmdb data base ou qualquer API que use Chaves PRIVADAS e recomendado que entre no site Oficial deles e Crie seu Login e senha e gerem sua API KEY. o Link encontra-se logo abaixo.
 
 Link para se cadastrar e Criar sua Chave de Api: https://www.themoviedb.org
 
