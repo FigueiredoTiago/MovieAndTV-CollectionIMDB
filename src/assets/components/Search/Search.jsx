@@ -19,7 +19,7 @@ const Search = () => {
 
   if (isLoading) return <Loading />;
   return (
-    <div className="container">
+    <div className="container search-container">
 
       <h2 className="search-title">
         Todos Resultados para: <span>{query}</span>
